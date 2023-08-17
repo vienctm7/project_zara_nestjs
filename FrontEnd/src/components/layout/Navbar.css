@@ -1,0 +1,418 @@
+.ContainerNavbar{
+    width:100%;
+    margin-top: 0px!important;
+    display:flex;
+    align-content:center;
+    justify-content:space-between;
+    position: fixed !important;
+    z-index:5;
+}
+    .menuContainer{
+        height:70px;
+    }
+
+    .navRightSection{
+        width:30%;
+        height:70px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:0px 10px;
+    }
+
+    .navRightSection>a>div:first-child{
+        width:100px;
+        overflow:hidden;
+    }
+
+    .navRightSection>a>div:first-child>input{
+        border:0px;
+        border-bottom:1px solid black;
+        outline:none;
+        background-color:transparent;
+    }
+
+    .navRightSection>a>div:first-child>input::placeholder{
+        color:black;
+    }
+
+    .navRightSection>div:last-child{
+        width:200px;
+        display:flex;
+        gap: 20px;
+        align-items:center;
+        justify-content:space-evenly;
+        font-size:13px;
+    }
+
+    .menuLogo{
+        display:none;
+    }
+
+    .menuContainer a {
+        color: #000;
+    }
+
+    /* header */
+
+    .header {
+        position:fixed;
+        width:27%;
+    }
+
+    .header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        height:50vh;
+    }
+
+    .header li a {
+        display: block;
+        text-decoration: none;
+    }
+
+    .header{
+        float: left;
+        font-size: 2em;
+        text-decoration: none;
+        text-align:left;
+        padding-left:15px;
+        z-index:5;
+    }
+
+    /* menu */
+
+    .header .menu {
+        clear: both;
+        max-height: 0;
+        text-transform:uppercase;
+        font-size:12px;
+        color:#343a40;
+        padding-left:25px;
+    }
+
+    ul::-webkit-scrollbar {
+        width: 7px;
+      }
+    
+    ul::-webkit-scrollbar-track {
+        background-color: rgb(209, 209, 209);
+      }
+    
+   ul::-webkit-scrollbar-thumb {
+        background-color: rgb(40, 39, 39);
+      }
+
+    li a{
+        color:#343a40;
+        padding-top:2px;
+        cursor:pointer;
+    }
+
+    .menuTop{
+        display:none;
+    }
+
+    /* menu icon */
+
+    .header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: left;
+        padding: 28px 20px;
+        user-select: none;
+    }
+
+    .header .menu-icon .navicon {
+        background:black;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+    }
+
+    .header .menu-icon .navicon:before,
+    .header .menu-icon .navicon:after {
+        background:black;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .header .menu-icon .navicon:before {
+        top: 5px;
+    }
+
+    .header .menu-icon .navicon:after {
+        top: -5px;
+    }
+
+    /* menu btn */
+
+    .header .menu-btn {
+        display: none;
+    }
+
+    .header .menu-btn:checked ~ .menu {
+        margin-top:40px;
+        max-height:100vh;
+        padding-bottom:100vh;
+        overflow:auto;
+        background-color:white;
+        animation: fadeIn 2s;
+        -webkit-animation: fadeIn 2s;
+        -moz-animation: fadeIn 2s;
+        -o-animation: fadeIn 2s;
+        -ms-animation: fadeIn 2s;
+    }
+
+    .header .menu-btn:checked ~ .menuTop {
+        display:flex;
+        gap:10px;
+        font-size:12px;
+        margin-top:0px;
+        padding-left:25px;
+        animation: fadeIn 2s;
+        -webkit-animation: fadeIn 2s;
+        -moz-animation: fadeIn 2s;
+        -o-animation: fadeIn 2s;
+        -ms-animation: fadeIn 2s;
+    }
+    .header .menu-btn:checked ~ .menuTop a{
+        text-decoration:none;
+    }
+
+    .header .menu-btn:checked ~ .menuLogo {
+        display:block;
+        width: 300px !important;
+        height:250px;
+        padding-left:70px;
+        padding-top:20px;
+        margin-bottom:-120px;
+        cursor:pointer;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+        background:#333;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+        background:#333;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    .logo{
+        width:300px;
+        padding-left:90px;
+        padding-top:20px;
+        
+    }
+
+    /* 48em = 768px */
+
+    @media (min-width: 1000em) {
+        .header li {
+            float: left;
+        }
+        
+        .header li a {
+            padding: 20px 30px;
+        }
+
+        .header .menu {
+            clear: none;
+            float: left;
+            max-height: none;
+        }
+
+        .header .menu-icon {
+            display: none;
+        }
+    }
+
+    .navRightSection>a>div:first-child>input{
+        border-color:black;
+    }
+
+   .navRightSection>a>div:first-child>input::placeholder{
+        color:black;
+    }
+
+    .menuContainer .header .menu-btn{
+        color:black;
+    }
+
+    .navRightSection a{
+        text-decoration:none;
+
+        color:black;
+    }
+
+    .navRightSection span{
+        text-decoration:none;
+        color:black;
+    }
+
+    .navRightSection p{
+        text-decoration:none;
+        cursor:pointer;
+        color:black;
+    }
+
+
+    .navRightSection svg{
+        fill:black;
+    }
+
+    @media only screen and (min-width: 769px) and (max-width:1200px){
+        
+        .header {
+            width:50%;
+            padding:0px;
+        }
+    }
+
+    @media only screen and (min-width: 769px) and (max-width:845px){
+        .navRightSection{
+            flex-direction:column-reverse;
+            align-items:flex-end;
+            margin-top:20px;
+        }
+
+        .header {
+            width:50%;
+            padding:0px;
+            
+        }
+
+        .logo{
+            width:250px;
+            padding-left:90px;
+            padding-top:20px;
+        }
+
+        .navRightSection>div:last-child{
+            display:flex;
+            gap:30px;
+            justify-content:right;
+            
+        }
+    }
+
+    @media only screen and (min-width: 481px) and (max-width:768px){
+        .navRightSection{
+            flex-direction:column-reverse;
+            align-items:flex-end;
+            margin-top:20px;
+            
+        }
+
+        .header {
+            width:65%;
+            padding:0px;
+        }
+
+        .logo{
+            width:200px;
+        }
+
+        .navRightSection>div:last-child{
+            display:flex;
+            gap:30px;
+            justify-content:right;
+            
+        }
+    }
+
+    @media only screen and (min-width:320px) and (max-width:480px){
+        
+        .navRightSection{
+            flex-direction:column-reverse;
+            align-items:flex-end;
+            margin-top:20px;
+            
+        }
+
+        .header {
+            width:100%;
+            padding:0px;
+        }
+
+        .logo{
+            width:250px;
+            padding-left:50px;
+        }
+
+        .login{
+            display: flex;
+        }
+        .help{
+            display:none;
+        }
+
+        .navRightSection>div:last-child{
+            width:150px;
+            display:flex;
+            gap:10px;
+            justify-content:right;
+            
+        }
+        .menuLogo>svg{
+            padding-left:30px;
+        }
+
+    }
+
+    @media only screen and (max-width: 320px){
+        .navRightSection{
+            flex-direction:column-reverse;
+            align-items:flex-end;
+            margin-top:20px;
+        }
+
+        .header {
+            width:100%;
+            padding:0px;
+        }
+
+        .logo{
+            width:100px;
+            padding-left:50px;
+        }
+
+        .help{
+            display:none;
+        }
+
+        .navRightSection>div:last-child{
+            width:100px;
+            display:flex;
+            gap: 0px;
+        }
+
+        .menuLogo>svg{
+            width:150px;
+        }
+    }
+

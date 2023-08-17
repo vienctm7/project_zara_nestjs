@@ -1,0 +1,39 @@
+.ProdContainer{
+    width: 90%;
+    margin: auto;
+    padding-top: 150px;
+    margin-bottom:50px;
+}
+.gridlayout {
+    display: grid;
+    width: 100%;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,max-content));
+}
+.nameStyling {
+    display: flex;
+    overflow: hidden;
+    height: 13px;
+    width: 70%;
+  }
+  .nameStyling a{
+    text-decoration: none;
+    color: black;
+  }
+  .nameStyling a:hover{
+    text-decoration: underline;
+  }
+  .flexStyling {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 11px;
+    text-align: left;
+  }
+  .iconStyling {
+    padding: 0px 3px 2px 2px;
+  }
+  .priceS {
+    width: 60px;
+    text-align: right;
+  }

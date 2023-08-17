@@ -1,0 +1,21 @@
+.footer{
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    font-size:11px;
+    margin-bottom:50px;
+    line-height:20px;
+    margin-top:100px;
+    
+}
+.footer_display{
+        display:flex;
+        align-items:flex-start;
+        gap:30px;
+    }
+.english_cookies_setting{
+        display:flex;
+        gap:20px;
+    }

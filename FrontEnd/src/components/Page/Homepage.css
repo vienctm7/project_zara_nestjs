@@ -1,0 +1,106 @@
+.Container{
+width: 100%;
+height: 100vh;
+position:absolute;
+cursor:pointer;
+z-index:-5;
+}
+.mySwiper {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.swiper-slide{
+    width:100%;
+    height:100vh;
+    
+}
+.swiper-slide img{
+    width:100%;
+    height:100vh;
+    object-fit:fill;
+    
+}
+.swiper-slide video{
+    width:100%;
+    height:100vh;
+    object-fit:cover;
+}
+.swiper-pagination-bullet-active {
+    background-color: #000 !important;
+}
+.swiper-pagination {
+    margin-top: 250px !important;
+}
+.nextPrevButtons{
+    width:100%;
+    position:absolute;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    z-index:5;
+    top:45vh;
+}
+.nextPrevButtons>button{
+   background-color:transparent;
+   border:none;
+   display:flex;
+   align-items:center;
+   font-weight:200;
+
+}
+
+.nextPrevButtons>button svg{
+    font-size:30px;
+
+}
+
+@media only screen and (min-width: 769px) and (max-width:1110px){
+    .swiper-slide img{
+        object-fit:cover;
+        
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width:768px){
+    .swiper-slide img{
+        object-fit:cover;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    .swiper-slide img{
+        object-fit:cover;
+    }
+
+    .swiper-slide  .mainWomen4{
+        transform: rotate(90deg);
+        object-fit: contain;
+        width:100vh;
+        object-position:0px 100%;
+        background-color:#e3edea;
+    }
+
+    .swiper-slide  .mainWomen6{
+        transform: rotate(-90deg);
+        object-fit: contain;
+        width:100vh;
+        object-position:0px 15%;
+        background-color:#c2d5e4;
+    }
+
+    .swiper-slide  .mainMen1{
+        object-position:60% 0%;
+    }
+
+    .swiper-slide  .mainKids2{
+        object-position:71% 0%;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .swiper-slide img{
+        object-fit:cover;
+    }
+}

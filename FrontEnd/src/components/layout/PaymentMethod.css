@@ -1,0 +1,70 @@
+.ContainerPaymentMethod{
+    width: 100%;
+font-size:smaller;
+position:relative;
+cursor:pointer;
+padding-top:120px;
+}
+.layout-content{
+    width:90%;
+    margin:auto;
+    margin-top:50px;
+    text-align:left;
+}
+.layout-content>p{
+    border:1px solid orange;
+    color:orange;
+    padding:10px;
+    width:50%;
+}
+.card-description{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(130px,max-content));
+    gap:15px;
+    align-items:center;
+}
+.card-item{
+    width:150px;
+    height:140px;
+    text-align:center;
+    border:1px solid #e5e5e5;
+    font-size:12px;
+}
+.card-item:hover{
+    border:1px solid gray;  
+}
+.bottom-card{
+    margin-top:20px;
+}
+.bottom-card-item{
+    text-align:center;
+    border:1px solid #e5e5e5;
+    padding:10px  
+    
+}
+
+.bottom-card-item:hover{
+    border:1px solid gray;  
+}
+.bottom-btn{
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    font-size:smaller;
+    display:flex;
+    justify-content:flex-end;
+    gap:20px;
+    padding:20px 20px 20px 65px;
+
+}
+.bottom-btn>p{
+    padding-top:-10px;
+    font-size:0.6rem;
+    text-align: right;
+}
+.checkout-btn{
+    font-size:small;
+    width:200px;
+    background:black;
+    color:white;
+}
